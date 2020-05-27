@@ -73,7 +73,7 @@ public final class EnchantmentSetup {
 		aliases.put(PotionEffectType.SLOW_DIGGING, "MINING_FATIGUE");
 		aliases.put(PotionEffectType.UNLUCK, "BAD_LUCK");
 		
-		registry.registerEnchantment("FARMER_SPIRIT", new ItemStack(Material.WHEAT_SEEDS), 1, Arrays.asList(ApplicableItem.BOOTS), Arrays.asList("Trampling Crops will never have", "to worry you again"),
+		registry.registerEnchantment("农民精神", new ItemStack(Material.WHEAT_SEEDS), 1, Arrays.asList(ApplicableItem.BOOTS), Arrays.asList("你再也不需要担心", "踩坏农作物"),
 			new InteractAction() {
 
 				@Override
@@ -84,7 +84,7 @@ public final class EnchantmentSetup {
 			}
 		);
 		
-		registry.registerEnchantment("VEIN_MINER", new ItemStack(Material.DIAMOND_PICKAXE), 50, Arrays.asList(ApplicableItem.PICKAXE, ApplicableItem.AXE, ApplicableItem.SHOVEL), Arrays.asList("Allows you to mine all", "Blocks of the same Type", "at once"),
+		registry.registerEnchantment("矿脉挖掘者", new ItemStack(Material.DIAMOND_PICKAXE), 50, Arrays.asList(ApplicableItem.PICKAXE, ApplicableItem.AXE, ApplicableItem.SHOVEL), Arrays.asList("允许你一次挖掉", "所有相同的方块"),
 			new DigAction() {
 
 				@Override
@@ -109,7 +109,7 @@ public final class EnchantmentSetup {
 			}
 		);
 		
-		registry.registerEnchantment("TIMBER", new ItemStack(Material.DIAMOND_AXE), 50, Arrays.asList(ApplicableItem.AXE), Arrays.asList("Allows you to chop all", "Logs of a Tree at once"),
+		registry.registerEnchantment("伐木工", new ItemStack(Material.DIAMOND_AXE), 50, Arrays.asList(ApplicableItem.AXE), Arrays.asList("允许您一次砍伐", "一棵树的所有原木"),
 			new DigAction() {
 
 				@Override
@@ -136,7 +136,7 @@ public final class EnchantmentSetup {
 			}
 		);
 		
-		registry.registerEnchantment("ICE_ASPECT", new ItemStack(Material.ICE), 2, Arrays.asList(ApplicableItem.SWORD, ApplicableItem.AXE, ApplicableItem.BOW), Arrays.asList("Slows down and weakens your", "Enemies"), 
+		registry.registerEnchantment("极寒", new ItemStack(Material.ICE), 2, Arrays.asList(ApplicableItem.SWORD, ApplicableItem.AXE, ApplicableItem.BOW), Arrays.asList("减慢并削弱你的", "敌人"),
 			new HitAction() {
 				
 				@Override
@@ -170,7 +170,7 @@ public final class EnchantmentSetup {
 			}
 		);
 		
-		registry.registerEnchantment("VAMPIRISM", new ItemStack(Material.WITHER_SKELETON_SKULL), 4, Arrays.asList(ApplicableItem.SWORD, ApplicableItem.AXE), Arrays.asList("Absorbs a small fraction of your Opponent's Health"), 
+		registry.registerEnchantment("吸血鬼", new ItemStack(Material.WITHER_SKELETON_SKULL), 4, Arrays.asList(ApplicableItem.SWORD, ApplicableItem.AXE), Arrays.asList("吸收对手生命值的一小部分"),
 			new HitAction() {
 				
 				@Override
@@ -186,7 +186,7 @@ public final class EnchantmentSetup {
 			}
 		);
 		
-		registry.registerEnchantment("XP_STEALER", new ItemStack(Material.EXPERIENCE_BOTTLE), 5, Arrays.asList(ApplicableItem.SWORD, ApplicableItem.AXE), Arrays.asList("Steals a small bit of XP from Players you damage"), 
+		registry.registerEnchantment("经验偷取", new ItemStack(Material.EXPERIENCE_BOTTLE), 5, Arrays.asList(ApplicableItem.SWORD, ApplicableItem.AXE), Arrays.asList("在你攻击的对手身上", "偷取一小部分经验值"),
 			new HitAction() {
 				
 				@Override
@@ -206,7 +206,7 @@ public final class EnchantmentSetup {
 			}
 		);
 		
-		registry.registerEnchantment("PECKISH", new ItemStack(Material.ROTTEN_FLESH), 4, Arrays.asList(ApplicableItem.SWORD, ApplicableItem.AXE), Arrays.asList("Absorbs a small fraction of your Opponent's Food Level"), 
+		registry.registerEnchantment("抢食", new ItemStack(Material.ROTTEN_FLESH), 4, Arrays.asList(ApplicableItem.SWORD, ApplicableItem.AXE), Arrays.asList("吸收对手一小部分饥饿值"),
 			new HitAction() {
 				
 				@Override
@@ -225,7 +225,7 @@ public final class EnchantmentSetup {
 			}
 		);
 		
-		registry.registerEnchantment("ARROW_REFLECTOR", new ItemStack(Material.ARROW), 10, Arrays.asList(ApplicableItem.BOOTS, ApplicableItem.LEGGINGS, ApplicableItem.CHESTPLATE, ApplicableItem.HELMET), Arrays.asList("Reflects Arrows "), 
+		registry.registerEnchantment("箭头反弹", new ItemStack(Material.ARROW), 10, Arrays.asList(ApplicableItem.BOOTS, ApplicableItem.LEGGINGS, ApplicableItem.CHESTPLATE, ApplicableItem.HELMET), Arrays.asList("反弹箭头"),
 			new DamageAction() {
 
 				@Override
@@ -238,7 +238,7 @@ public final class EnchantmentSetup {
 			}
 		);
 		
-		registry.registerEnchantment("VENOM", new ItemStack(Material.SPIDER_EYE), 2, Arrays.asList(ApplicableItem.SWORD, ApplicableItem.AXE, ApplicableItem.BOW), Arrays.asList("Poisons your Enemies"), 
+		registry.registerEnchantment("毒液", new ItemStack(Material.SPIDER_EYE), 2, Arrays.asList(ApplicableItem.SWORD, ApplicableItem.AXE, ApplicableItem.BOW), Arrays.asList("使你的敌人中毒"),
 			new HitAction() {
 				
 				@Override
@@ -268,7 +268,7 @@ public final class EnchantmentSetup {
 			}
 		);
 		
-		registry.registerEnchantment("ZOMBIE_FLU", new ItemStack(Material.ZOMBIE_HEAD), 2, Arrays.asList(ApplicableItem.SWORD, ApplicableItem.AXE, ApplicableItem.BOW), Arrays.asList("Gives your Enemies Hunger"), 
+		registry.registerEnchantment("僵尸流感", new ItemStack(Material.ZOMBIE_HEAD), 2, Arrays.asList(ApplicableItem.SWORD, ApplicableItem.AXE, ApplicableItem.BOW), Arrays.asList("使你的敌人饥饿"),
 			new HitAction() {
 				
 				@Override
@@ -298,7 +298,7 @@ public final class EnchantmentSetup {
 			}
 		);
 		
-		registry.registerEnchantment("CONCEALING", new ItemStack(Material.BLACK_WOOL), 2, Arrays.asList(ApplicableItem.SWORD, ApplicableItem.AXE, ApplicableItem.BOW), Arrays.asList("Gives your Enemies Blindness"), 
+		registry.registerEnchantment("隐藏", new ItemStack(Material.BLACK_WOOL), 2, Arrays.asList(ApplicableItem.SWORD, ApplicableItem.AXE, ApplicableItem.BOW), Arrays.asList("使你的敌人致盲"),
 			new HitAction() {
 				
 				@Override
@@ -328,7 +328,7 @@ public final class EnchantmentSetup {
 			}
 		);
 		
-		registry.registerEnchantment("PUZZLEMENT", new ItemStack(Material.MELON_SEEDS), 2, Arrays.asList(ApplicableItem.SWORD, ApplicableItem.AXE, ApplicableItem.BOW), Arrays.asList("Gives your Enemies Nausea"), 
+		registry.registerEnchantment("眩晕", new ItemStack(Material.MELON_SEEDS), 2, Arrays.asList(ApplicableItem.SWORD, ApplicableItem.AXE, ApplicableItem.BOW), Arrays.asList("使你的敌人晕眩"),
 			new HitAction() {
 				
 				@Override
@@ -358,7 +358,7 @@ public final class EnchantmentSetup {
 			}
 		);
 		
-		registry.registerEnchantment("WITHERING", new ItemStack(Material.WITHER_SKELETON_SKULL), 2, Arrays.asList(ApplicableItem.SWORD, ApplicableItem.AXE), Arrays.asList("Gives your Enemies the Wither Effect"), 
+		registry.registerEnchantment("凋零", new ItemStack(Material.WITHER_SKELETON_SKULL), 2, Arrays.asList(ApplicableItem.SWORD, ApplicableItem.AXE), Arrays.asList("给予你的敌人凋零效果"),
 			new HitAction() {
 				
 				@Override
@@ -374,7 +374,7 @@ public final class EnchantmentSetup {
 			}
 		);
 		
-		registry.registerEnchantment("THERMAL", new ItemStack(Material.LAVA_BUCKET), 4, Arrays.asList(ApplicableItem.BOOTS, ApplicableItem.LEGGINGS, ApplicableItem.CHESTPLATE, ApplicableItem.HELMET), Arrays.asList("Sets Attackers on Fire"), 
+		registry.registerEnchantment("炙热", new ItemStack(Material.LAVA_BUCKET), 4, Arrays.asList(ApplicableItem.BOOTS, ApplicableItem.LEGGINGS, ApplicableItem.CHESTPLATE, ApplicableItem.HELMET), Arrays.asList("使攻击者着火"),
 			new DamageAction() {
 
 				@Override
@@ -389,7 +389,7 @@ public final class EnchantmentSetup {
 			}
 		);
 		
-		registry.registerEnchantment("MAGICAL_PROTECTION", new ItemStack(Material.BLAZE_POWDER), 4, Arrays.asList(ApplicableItem.BOOTS, ApplicableItem.LEGGINGS, ApplicableItem.CHESTPLATE, ApplicableItem.HELMET), Arrays.asList("Protection against Potions", "of Harming"), 
+		registry.registerEnchantment("魔法保护", new ItemStack(Material.BLAZE_POWDER), 4, Arrays.asList(ApplicableItem.BOOTS, ApplicableItem.LEGGINGS, ApplicableItem.CHESTPLATE, ApplicableItem.HELMET), Arrays.asList("抵御瞬间伤害效果"),
 			new DamageAction() {
 
 				@Override
@@ -399,7 +399,7 @@ public final class EnchantmentSetup {
 			}
 		);
 		
-		registry.registerEnchantment("POISONOUS_PROTECTION", new ItemStack(Material.POISONOUS_POTATO), 4, Arrays.asList(ApplicableItem.BOOTS, ApplicableItem.LEGGINGS, ApplicableItem.CHESTPLATE, ApplicableItem.HELMET), Arrays.asList("Protection against Potions", "of Poison"), 
+		registry.registerEnchantment("中毒保护", new ItemStack(Material.POISONOUS_POTATO), 4, Arrays.asList(ApplicableItem.BOOTS, ApplicableItem.LEGGINGS, ApplicableItem.CHESTPLATE, ApplicableItem.HELMET), Arrays.asList("抵御中毒效果"),
 			new DamageAction() {
 
 				@Override
@@ -409,7 +409,7 @@ public final class EnchantmentSetup {
 			}
 		);
 		
-		registry.registerEnchantment("WITHER_PROTECTION", new ItemStack(Material.WITHER_SKELETON_SKULL), 4, Arrays.asList(ApplicableItem.BOOTS, ApplicableItem.LEGGINGS, ApplicableItem.CHESTPLATE, ApplicableItem.HELMET), Arrays.asList("Protection against Damage taken", "from the Wither Effect"), 
+		registry.registerEnchantment("凋零保护", new ItemStack(Material.WITHER_SKELETON_SKULL), 4, Arrays.asList(ApplicableItem.BOOTS, ApplicableItem.LEGGINGS, ApplicableItem.CHESTPLATE, ApplicableItem.HELMET), Arrays.asList("抵御凋零效果"),
 			new DamageAction() {
 
 				@Override
@@ -419,7 +419,7 @@ public final class EnchantmentSetup {
 			}
 		);
 		
-		registry.registerEnchantment("ENDER_PEARL_PROTECTION", new ItemStack(Material.ENDER_PEARL), 2, Arrays.asList(ApplicableItem.BOOTS, ApplicableItem.LEGGINGS, ApplicableItem.CHESTPLATE, ApplicableItem.HELMET), Arrays.asList("Protection against Damage taken", "from throwing an Enderpearl"), 
+		registry.registerEnchantment("末影珍珠保护", new ItemStack(Material.ENDER_PEARL), 2, Arrays.asList(ApplicableItem.BOOTS, ApplicableItem.LEGGINGS, ApplicableItem.CHESTPLATE, ApplicableItem.HELMET), Arrays.asList("抵御扔出末影珍珠后造成的伤害"),
 			new DamageAction() {
 
 				@Override
@@ -431,7 +431,7 @@ public final class EnchantmentSetup {
 			}
 		);
 		
-		registry.registerEnchantment("PRICK_PROTECTION", new ItemStack(Material.CACTUS), 4, Arrays.asList(ApplicableItem.BOOTS, ApplicableItem.LEGGINGS, ApplicableItem.CHESTPLATE, ApplicableItem.HELMET), Arrays.asList("Protection against Damage taken", "from Cacti and Bushes"), 
+		registry.registerEnchantment("刺伤保护", new ItemStack(Material.CACTUS), 4, Arrays.asList(ApplicableItem.BOOTS, ApplicableItem.LEGGINGS, ApplicableItem.CHESTPLATE, ApplicableItem.HELMET), Arrays.asList("保护免受仙人掌和灌木丛的伤害"),
 			new DamageAction() {
 
 				@Override
@@ -443,7 +443,7 @@ public final class EnchantmentSetup {
 			}
 		);
 		
-		registry.registerEnchantment("MAGNETIC_AURA", new ItemStack(Material.HOPPER), 10, Arrays.asList(ApplicableItem.BOOTS, ApplicableItem.LEGGINGS, ApplicableItem.CHESTPLATE, ApplicableItem.HELMET), Arrays.asList("Picks up all nearby Items while", "being worn"), 
+		registry.registerEnchantment("磁铁", new ItemStack(Material.HOPPER), 10, Arrays.asList(ApplicableItem.BOOTS, ApplicableItem.LEGGINGS, ApplicableItem.CHESTPLATE, ApplicableItem.HELMET), Arrays.asList("穿着时自动拾取附近的所有物品"),
 			new WearAction() {
 
 				@Override
@@ -461,7 +461,7 @@ public final class EnchantmentSetup {
 			}
 		);
 		
-		registry.registerEnchantment("METAL_HEAD", new ItemStack(Material.ANVIL), 4, Arrays.asList(ApplicableItem.HELMET), Arrays.asList("Protection against Damage taken", "from fallen Blocks (e.g. Anvils)"), 
+		registry.registerEnchantment("铁头", new ItemStack(Material.ANVIL), 4, Arrays.asList(ApplicableItem.HELMET), Arrays.asList("保护免受掉落方块所造成", "的伤害(比如铁砧)"),
 			new DamageAction() {
 
 				@Override
@@ -470,8 +470,43 @@ public final class EnchantmentSetup {
 				}
 			}
 		);
-		
-		
+
+		HashMap<String, String> alias = new HashMap<>();
+		alias.put("Speed", "速度");
+		alias.put("Slowness", "缓慢");
+		alias.put("Haste", "急迫");
+		alias.put("Mining Fatigue", "挖掘疲劳");
+		alias.put("Strength", "力量");
+		alias.put("Instant Health", "瞬间治疗");
+		alias.put("Instant Damage", "瞬间伤害");
+		alias.put("Jump Boost", "跳跃提升");
+		alias.put("Nausea", "反胃");
+		alias.put("Regeneration", "生命恢复");
+		alias.put("Resistance", "抗性提升");
+		alias.put("Fire Resistance", "防火");
+		alias.put("Water Breathing", "水下呼吸");
+		alias.put("Invisibility", "隐身");
+		alias.put("Blindness", "致盲");
+		alias.put("Night Vision", "夜视");
+		alias.put("Hunger", "饥饿");
+		alias.put("Weakness", "虚弱");
+		alias.put("Poison", "中毒");
+		alias.put("Wither", "凋零");
+		alias.put("Health Boost", "生命提升");
+		alias.put("Absorption", "伤害吸收");
+		alias.put("Saturation", "饱和");
+		alias.put("Glowing", "发光");
+		alias.put("Levitation", "漂浮");
+		alias.put("Luck", "幸运");
+		alias.put("Bad Luck", "霉运");
+		alias.put("Heal", "治疗");
+		alias.put("Harm", "伤害");
+		alias.put("Bad Omen", "不祥之兆");
+		alias.put("Conduit Power", "潮涌能量");
+		alias.put("Dolphins Grace", "海豚的恩惠");
+		alias.put("Hero Of The Village", "村庄英雄");
+		alias.put("Slow Falling", "缓降");
+
 		for (PotionEffectType type: PotionEffectType.values()) {
 			if (type != null) {
 				String name = aliases.containsKey(type) ? aliases.get(type): type.getName();
@@ -483,7 +518,7 @@ public final class EnchantmentSetup {
 				item.setItemMeta(meta);
 				
 				EmeraldEnchants.getInstance().getCfg().setDefaultValue(name + ".enabled", !effectBlacklist.contains(type));
-				registry.registerEnchantment(name, item, 3, Arrays.asList(ApplicableItem.values()), Arrays.asList("Gives you the Potion Effect", "\"" + StringUtils.format(name) + "\"", "while wearing or carrying an Item", "with this Enchantment"), 
+				registry.registerEnchantment(alias.get(StringUtils.format(name)), item, 3, Arrays.asList(ApplicableItem.values()), Arrays.asList("当你穿着或拿着带有该附魔效果", "的物品时给予你药水效果", "\"" + alias.get(StringUtils.format(name)) + "\""),
 					new CarryAction() {
 	
 						@Override

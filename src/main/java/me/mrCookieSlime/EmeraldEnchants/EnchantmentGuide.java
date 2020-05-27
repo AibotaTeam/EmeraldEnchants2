@@ -15,7 +15,7 @@ public final class EnchantmentGuide {
     private EnchantmentGuide() {}
 
     public static void open(Player p) {
-        ChestMenu menu = new ChestMenu("&bEnchantment Guide");
+        ChestMenu menu = new ChestMenu("&b附魔手册");
         int index = 0;
 
         for (ApplicableItem item : ApplicableItem.values()) {
@@ -27,9 +27,9 @@ public final class EnchantmentGuide {
                 }
             }
 
-            menu.addItem(index, new CustomItem(item.getItems().get(0), "&7Tool: &e" + StringUtils.format(item.toString()), "", "&7Contains &6" + enchantments.size() + "&7 Enchantment(s)"));
+            menu.addItem(index, new CustomItem(item.getItems().get(0), "&7工具: &e" + StringUtils.format(item.toString()), "", "&7包含 &6" + enchantments.size() + "&7 个附魔"));
             menu.addMenuClickHandler(index, (pl, slot, stack, action) -> {
-                ChestMenu chestmenu = new ChestMenu("&bEnchantment Guide");
+                ChestMenu chestmenu = new ChestMenu("&b附魔手册");
                 int i = 0;
 
                 for (CustomEnchantment ench : enchantments) {
@@ -42,7 +42,7 @@ public final class EnchantmentGuide {
                         lore.add(ChatColor.RESET + desc);
                     }
 
-                    chestmenu.addItem(i, new CustomItem(ench.getItemStack(), "&7Enchantment Info: &r" + ench.getDisplayName(), lore.toArray(new String[lore.size()])));
+                    chestmenu.addItem(i, new CustomItem(ench.getItemStack(), "&7附魔信息: &r" + ench.getDisplayName(), lore.toArray(new String[lore.size()])));
                     chestmenu.addMenuClickHandler(i, (a, b, c, d) -> false);
                     i++;
                 }
